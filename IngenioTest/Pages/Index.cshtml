@@ -1,10 +1,62 @@
 ﻿@page
 @model IndexModel
+
 @{
     ViewData["Title"] = "Home page";
+
+  
+    
+
+
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <form id="frm!" method="post">
+            <table width="95%">
+                <tr>
+                    <td><span>Enter Category ID: -</span> </td>
+                    <td><input name="cateGoryNum" id="cateGoryNum" type="number" /></td>
+                    <td><input id="bttnCatNum" type="submit"></input></td>
+
+
+                </tr>
+
+
+
+
+            </table>
+
+
+        </form>
+        <br />
+
+        <h3 class="clearfix">@Model.answer1</h3>
+
+
+        <br />
+
+        <form id="frm2" method="post">
+
+            <table width="95%">
+                <tr>
+
+                    <td><span>Enter Level: -</span> </td>
+                    <td><input name="levelNum" id="levelNum" type="number" /></td>
+                    <td><input id="bttnLevelNum" type="submit"></input></td>
+
+
+
+                </tr>
+
+            </table>
+
+
+        </form>
+
+        <br />
+
+        <h3 class="clearfix">@Model.answer2</h3>
+
+    </div>
